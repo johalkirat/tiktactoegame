@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-
-import './App.css';
+import Gameboard from './components/Gameboard';
 import Player from './components/Player';
 
 
@@ -12,17 +10,20 @@ function App() {
         <h1>Tic-Tac-Toe</h1>
       </header>
       <main>
-        <div className="game-container">
+        <div id="game-container">
 
-          <ol>
-            <Player name="kirat" symbol="X"/>
+          <ol id="players">
+            <Player  name="kirat" symbol="X"/>
             <Player name="Amarinder" symbol="O"/>
 
           </ol>
+          <Gameboard/>
         </div>
+        
       </main>
     </div>
   );
 }
 
 export default App;
+
